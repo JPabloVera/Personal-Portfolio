@@ -7,17 +7,20 @@ const projects = [
     {
         title: "Personal Portfolio v1",
         description: "I needed a new cool resume, so I created this Portfolio :)",
-        technologies: ["Next.js", "React", "TypeScript", "CSS"]
+        technologies: ["Next.js", "React", "TypeScript", "CSS"],
+        link: "https://github.com/JPabloVera/Personal-Portfolio"
     },
     {
         title: "CMS API",
         description: "I had free time and I was curious about how a CMS worked so I decided to make a simple one",
-        technologies: ["express.js", "TypeScript", "TypeORM", "MySQl"]
+        technologies: ["express.js", "TypeScript", "TypeORM", "MySQl"],
+        link: "https://github.com/JPabloVera/CMS-API"
     },
     {
         title: "Covid Map",
-        description: "I wanted to experiment with React hooks so I decided to make a global interactive map. It's not my best work, but I'm proud of it.",
-        technologies: ["React", "JavaScript", "CSS", "MapBox"]
+        description: "I wanted to experiment with React hooks so I decided to make a global interactive map.",
+        technologies: ["React", "JavaScript", "CSS", "MapBox"],
+        link: "https://github.com/JPabloVera/ReactCovidTracker"
     }
 ]
 
@@ -34,7 +37,7 @@ export const Project = ({forward_ref}) => {
                             <div className={styles.projectContainer} key={`div ${project.title}`}>
                                 <div style={{display: "flex", justifyContent: "space-between"}}>
                                     <span key={`project: ${project.title}`} className={`${global_styles.font_light_1} ${global_styles.title_2}`}>{project.title}</span>
-                                    <a style={{marginRight: "10px"}} href="https://mui.com/material-ui/icons/" target="_blank" rel="noopener noreferrer">
+                                    <a style={{marginRight: "10px"}} href={project.link} target="_blank" rel="noopener noreferrer">
                                         <GitHub className={global_styles.icon} fontSize="medium" />
                                     </a>
                                 </div>

@@ -24,7 +24,7 @@
 
 
 .projectContainer {
-    max-width: 45%;
+    max-width: 40%;
     min-width: 33%;
     display: flex;
     flex-direction: column;

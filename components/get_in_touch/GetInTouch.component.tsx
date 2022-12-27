@@ -11,13 +11,13 @@ export const GetInTouch = ({forward_ref}) => {
             <p className={`${global_styles.big_title_1} ${styles.title}`}>Get In Touch</p>
             <a href='mailto:pablvvera@gmail.com' className={`${global_styles.title_1} ${styles.button}`}>Say Hello</a>
             <div className={styles.links_container}>
-                <a>
+                <a href="https://github.com/JPabloVera">
                     <GitHub className={global_styles.icon} fontSize="large" />
                 </a>
-                <a>
+                <a href="https://www.linkedin.com/in/vera-juan-pablo/">
                     <LinkedIn className={global_styles.icon} fontSize="large" />
                 </a>
-                <a>
+                <a href="https://www.instagram.com/juanpabl.ver/">
                     <Instagram className={global_styles.icon} fontSize="large" />
                 </a>
             </div>
