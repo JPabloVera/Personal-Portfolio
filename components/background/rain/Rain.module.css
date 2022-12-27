@@ -1,0 +1,38 @@
+.rain span {
+    position: absolute;
+    width: 1px;
+    bottom: 100%;
+    top: -10vh;
+    background: linear-gradient(#dee2e6, #999999, #666666, #333333, #000000);
+    opacity: 0.5;
+    animation: drops 5s linear infinite;
+}
+
+.rain {
+    height: 100%;
+    width: 100%;
+    position: sticky;
+}
+
+@keyframes drops {
+    0% {
+        transform: translateY(10vh);
+        opacity: 0.5;
+    }
+    25% {
+        transform: translateY(30vh);
+        opacity: 0.4;
+    }
+    50% {
+        transform: translateY(55vh);
+        opacity: 0.3;
+    }
+    75% {
+        transform: translateY(70vh);
+        opacity: 0.2;
+    }
+    100% {
+        transform: translateY(90vh);
+        opacity: 0;
+    }
+}

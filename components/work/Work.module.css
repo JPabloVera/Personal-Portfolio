@@ -1,0 +1,162 @@
+.work_container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.companies_button_container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.companies_button_container > button {
+    border: none;
+    background: none;
+    width: 25%;
+    border-bottom: 3px solid #787777;;
+}
+
+.companies_highlight {
+    height: 3px;
+    background: #d9d1d1;
+    width: 25%;
+    margin-top: -3px;
+    transition: transform 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition-delay: 0.1s;
+}
+
+.work_data_container {
+    padding: 5vh 5vw;
+    width: 90vw;
+    height: 100%;
+}
+
+.work_timeline {
+    color: #b4b2b2;
+    font-weight: 300;
+    font-size: 0.8rem;
+}
+
+.work_achievements {
+    color: #c2bebe;
+    font-weight: 300;
+    font-size: 0.8rem;
+}
+
+.work_technologies {
+    color: #f5eded;
+    font-weight: 400;
+    font-size: 0.7rem;
+    margin-right: 5px;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 4px;
+    margin-bottom: 10px;
+}
+
+.company_button {
+    font-size: 0.8rem;
+}
+
+.technologies_container {
+    margin: 30px 10px;
+}
+
+@media (max-width: 380px) {
+    .work_title {
+        font-size: 0.85rem !important;
+    }
+}
+
+@media (max-width: 345px) {
+    .work_timeline {
+        font-size: 0.7rem;
+    }
+
+    .work_achievements {
+        font-size: 0.73rem;
+    }
+
+    .work_technologies {
+        font-size: 0.65rem;
+    }
+
+    .company_button {
+        font-size: 0.7rem;
+    }
+}
+
+@media (min-width: 391px) and (max-width: 750px) {
+
+    .work_timeline {
+        font-size: 0.9rem;
+    }
+
+    .work_achievements {
+        font-size: 0.9rem;
+    }
+
+    .work_technologies {
+        font-size: 0.9rem;
+    }
+
+    .company_button {
+        font-size: 0.9rem;
+    }
+}
+
+
+@media (min-width: 750px) and (max-width: 1000px) {
+    .technologies_container {
+        width: 75%;
+    }
+
+    .work_timeline {
+        font-size: 0.95rem;
+    }
+
+    .work_achievements {
+        font-size: 1rem;
+    }
+
+    .work_technologies {
+        font-size: 1rem;
+        margin-right: 7px;
+    }
+
+    .company_button {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 1000px) {
+    .technologies_container {
+        width: 60%;
+    }
+
+    .work_timeline {
+        font-size: 1rem;
+    }
+
+    .work_achievements {
+        font-size: 1.1rem;
+    }
+
+    .work_technologies {
+        font-size: 1.1rem;
+        margin-right: 10px;
+    }
+}
+
+@media (min-width: 1000px) and (max-width: 1600px) {
+    .company_button {
+        font-size: 1.4rem;
+    }
+}
+
+@media (min-width: 1600px) {
+    .company_button {
+        font-size: 2rem;
+    }
+}

@@ -1,0 +1,183 @@
+.main {
+  flex-direction: column;
+  padding: 0px 10vw;
+}
+
+.container {
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+
+.section_container {
+  display: flex;
+  height: 80vh;
+}
+.footer {
+  display: flex;
+  flex: 1;
+  padding: 2rem 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.title_1 {
+  font-size: 1.7rem;
+}
+
+.font_light_1 {
+  font-weight: 400;
+  color: #B1B0B0FF;
+}
+
+.font_light_extra {
+  color: #d5cfcf;
+  font-weight: 200;
+}
+
+.font_light_heavy {
+  color: #B1B0B0FF;
+  font-weight: 800;
+}
+
+.title_2 {
+  font-size: 1.25rem;
+}
+
+.subtitle_1 {
+  font-size: 1.15rem;
+}
+
+.subtitle_2 {
+  font-size: 1rem;
+}
+
+.tag_container_1 {
+  width: 100%;
+  display: flex;
+  flex-flow: wrap;
+}
+
+.tag_1 {
+  color: #f5eded;
+  font-weight: 400;
+  font-size: 0.7rem;
+  margin-right: 5px;
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 4px;
+  margin-bottom: 10px;
+}
+
+.big_title_1 {
+  font-size: 4.5rem;
+}
+
+.tag_1:hover {
+  background-color: #424141;
+}
+
+.icon:hover {
+  color: #436d43 !important;
+}
+
+@media (max-width: 390px) {
+
+  .big_title_1 {
+    font-size: 2.5rem;
+  }
+
+  .subtitle_2 {
+    font-size: 0.8rem;
+  }
+
+  .subtitle_1 {
+    font-size: 0.9rem;
+  }
+
+  .tag_1 {
+    font-size: 0.6rem;
+  }
+
+  .title_1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 390px) and (max-width: 750px) {
+
+  .big_title_1 {
+    font-size: 3rem;
+  }
+
+  .tag_1 {
+    font-size: 0.8rem;
+  }
+
+  .subtitle_1 {
+    font-size: 1.05rem;
+  }
+
+  .subtitle_2 {
+    font-size: 0.95rem;
+  }
+
+  .title_1 {
+    font-size: 1.5rem;
+  }
+
+  .title_2 {
+    font-size: 1rem;
+  }
+
+  .main {
+    padding: 0px 5vw;
+  }
+}
+
+@media (min-width: 750px) and (max-width: 1000px) {
+  .tag_1 {
+    font-size: 0.9rem;
+    margin-right: 7px;
+  }
+
+  .big_title_1 {
+    font-size: 4rem;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1600px) {
+  .tag_1 {
+    font-size: 1rem;
+    margin-right: 10px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .title_1 {
+    font-size: 2.7rem;
+  }
+
+  .title_2 {
+    font-size: 2.25rem;
+  }
+
+  .subtitle_2 {
+    font-size: 2rem;
+  }
+
+  .subtitle_1 {
+    font-size: 2.15rem;
+  }
+
+  .tag_1 {
+    font-size: 2rem;
+  }
+}

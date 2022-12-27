@@ -1,0 +1,77 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10vh;
+
+}
+
+/* same as the about title */
+.title {
+    align-self: center;
+    margin-bottom: 10vh;
+    font-size: 1.7rem;
+    font-weight: 400;
+    color: #B1B0B0FF;
+}
+
+.projectsContainer {
+    display: flex;
+    flex-flow: wrap;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.projectContainer {
+    max-width: 45%;
+    min-width: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border: 1px solid white;
+    padding: 2vw;
+    border-radius: 15px;
+    background: #2f2c2c;
+    margin-left: 3vw;
+    margin-bottom: 3vh;
+}
+
+.projectTitle {
+    margin-bottom: 3vh;
+    font-size: 1.5rem;
+    font-weight: 350;
+    color: #B1B0B0FF;
+}
+
+.workDescription {
+    color: #c2bebe;
+    font-weight: 300;
+    font-size: 0.8rem;
+}
+
+/* same as the skills in work */
+.technologies {
+    color: #f5eded;
+    font-weight: 400;
+    font-size: 0.7rem;
+    margin-right: 5px;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 4px;
+    margin-bottom: 10px;
+}
+
+
+.technologiesContainer {
+    margin: 30px 10px;
+    width: 100%;
+    display: flex;
+    flex-flow: wrap;
+}
+
+@media (max-width: 550px) {
+    .projectContainer {
+        max-width: 100%;
+    }
+}
