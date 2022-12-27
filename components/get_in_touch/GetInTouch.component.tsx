@@ -5,7 +5,7 @@ import {GitHub} from "@mui/icons-material";
 import {LinkedIn} from "@mui/icons-material";
 import {Instagram} from "@mui/icons-material";
 
-export const GetInTouch = ({forward_ref}) => {
+export const GetInTouch = ({forward_ref} : {forward_ref: any}) => {
     return (
         <div ref={forward_ref} className={styles.container} >
             <p className={`${global_styles.big_title_1} ${styles.title}`}>Get In Touch</p>

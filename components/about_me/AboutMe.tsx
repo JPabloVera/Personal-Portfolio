@@ -22,7 +22,7 @@ const skill_list = [
     },
 ]
 
-export const AboutMe = ({forward_ref}) => {
+export const AboutMe = ({forward_ref} : {forward_ref: any}) => {
 
     const skillTitle = `${global_styles.title_1} ${global_styles.font_light_1} ${styles.title}`
     const skillColumTitleFont = `${global_styles.subtitle_1} ${global_styles.font_light_heavy} ${styles.skillColumnTitle}`
@@ -47,7 +47,7 @@ export const AboutMe = ({forward_ref}) => {
                     <div className={styles.skillColumnContainer}>
                         {skill_list.map(value => {
                             return (
-                                <div className={styles.skillColumn}>
+                                <div key={`container ${value.title}`} className={styles.skillColumn}>
                                     <span className={skillColumTitleFont}>{value.title}</span>
                                     <div className={styles.skillValueColumn}>
                                         {value.values.map(val =>

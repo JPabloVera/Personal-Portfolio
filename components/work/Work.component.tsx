@@ -62,10 +62,10 @@ const companies_data = [
     }
 ]
 
-export const Work = ({forward_ref}) => {
+export const Work = ({forward_ref} : {forward_ref: any}) => {
 
     const [selected_company, select_company] = useState<number>(0)
-    const [highlight_movement, set_highlight_movement] = useState<number>()
+    const [highlight_movement, set_highlight_movement] = useState<number>(0)
     const company = companies_data[selected_company]
 
     if (typeof window !== "undefined") {

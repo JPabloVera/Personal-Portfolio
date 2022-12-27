@@ -25,7 +25,7 @@ const projects = [
 ]
 
 
-export const Project = ({forward_ref}) => {
+export const Project = ({forward_ref} : {forward_ref: any}) => {
     return (
         <div style={{marginTop: "20vh"}}>
             <div ref={forward_ref}/>
@@ -43,7 +43,7 @@ export const Project = ({forward_ref}) => {
                                 </div>
                                 <p className={`${global_styles.subtitle_2} ${global_styles.font_light_1}`}>{project.description}</p>
                                 <div className={global_styles.tag_container_1}>
-                                    {project.technologies.map(tech => <span className={global_styles.tag_1}>{tech}</span>)}
+                                    {project.technologies.map(tech => <span key={tech} className={global_styles.tag_1}>{tech}</span>)}
                                 </div>
                             </div>
                         )
