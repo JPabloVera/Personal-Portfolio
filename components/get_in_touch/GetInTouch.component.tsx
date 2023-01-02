@@ -9,15 +9,15 @@ export const GetInTouch = ({forward_ref} : {forward_ref: any}) => {
     return (
         <div ref={forward_ref} className={styles.container} >
             <p className={`${global_styles.big_title_1} ${styles.title}`}>Get In Touch</p>
-            <a href='mailto:pablvvera@gmail.com' className={`${global_styles.title_1} ${styles.button}`}>Say Hello</a>
+            <a href='https://www.upwork.com/freelancers/pablovera' className={`${global_styles.title_1} ${styles.button}`}>Say Hello</a>
             <div className={styles.links_container}>
                 <a href="https://github.com/JPabloVera">
                     <GitHub className={global_styles.icon} fontSize="large" />
                 </a>
-                <a href="https://www.linkedin.com/in/vera-juan-pablo/">
+                <a href="">
                     <LinkedIn className={global_styles.icon} fontSize="large" />
                 </a>
-                <a href="https://www.instagram.com/juanpabl.ver/">
+                <a href="">
                     <Instagram className={global_styles.icon} fontSize="large" />
                 </a>
             </div>
