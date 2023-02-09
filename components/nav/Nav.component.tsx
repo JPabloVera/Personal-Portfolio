@@ -4,7 +4,7 @@ import styles from "./Nav.module.css"
 import global_styles from "../../styles/Home.module.css"
 
 export const Nav = ({ref_array}: {ref_array: {name: string, ref: MutableRefObject<any>}[]}) => {
-    const is_mobile = useMediaQuery('(max-width: 800px)')
+    const is_mobile = useMediaQuery('(max-width: 801px)')
 
     const handle_click = (ref: MutableRefObject<any>) => () => {
         ref.current?.scrollIntoView({behavior: 'smooth'})
